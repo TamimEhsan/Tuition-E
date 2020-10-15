@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.TaskView">
+    <children>
+        <JFXTreeTableView fx:id="taskTable" layoutY="37.0" prefHeight="352.0" prefWidth="650.0" stylesheets="@../CSS/main.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <JFXTextField fx:id="filterTasks" layoutX="93.0" layoutY="13.0" prefHeight="25.0" prefWidth="178.0" promptText="Search" />
+        <JFXButton buttonType="RAISED" layoutX="539.0" layoutY="13.0" onAction="#addData" ripplerFill="#5ab6d7" style="-fx-background-color: #4979cc;" text="Add New Entry" textFill="WHITE" />
+        <JFXButton buttonType="RAISED" layoutX="470.0" layoutY="13.0" onAction="#deleteData" ripplerFill="#47b7d3" style="-fx-background-color: #cc4949;" text="Delete" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#goToHome" ripplerFill="#3f9fe8" style="-fx-background-color: #4979cc;" text="Back" textFill="WHITE" />
+    </children>
+</AnchorPane>

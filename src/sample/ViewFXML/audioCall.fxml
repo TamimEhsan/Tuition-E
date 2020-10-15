@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane fx:id="cj" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.AudioCall">
+   <children>
+      <Circle fx:id="circle2" fill="#1f93ff00" layoutX="302.0" layoutY="200.0" radius="89.0" stroke="#3e71d7" strokeType="INSIDE" strokeWidth="3.0" />
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#goToHome" ripplerFill="#6671e8" style="-fx-background-color: #eeeeee;" text="Back" />
+      <Circle fx:id="circle1" fill="#1f93ff00" layoutX="302.0" layoutY="200.0" radius="89.0" stroke="#3e71d7" strokeType="INSIDE" strokeWidth="3.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="250.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/phone.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="236.0" layoutY="347.0" onAction="#startCall" style="-fx-background-color: #eeeeee;" text="Start Call" />
+      <JFXButton buttonType="RAISED" layoutX="310.0" layoutY="346.0" onAction="#endCall" style="-fx-background-color: #eeeeee;" text="End Call" />
+   </children>
+</AnchorPane>

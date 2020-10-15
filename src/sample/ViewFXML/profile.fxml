@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Profile">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#939394" height="220.0" layoutX="-2.0" layoutY="114.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="114.0" />
+        <Circle fx:id="userImage" fill="DODGERBLUE" layoutX="200.0" layoutY="223.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+        <Label fx:id="userName" alignment="CENTER" contentDisplay="CENTER" layoutY="343.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <font>
+                <Font name="MS Outlook" size="27.0" />
+            </font>
+        </Label>
+        <Label fx:id="userDescription" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="382.0" prefHeight="53.0" prefWidth="377.0" text="Label" textAlignment="CENTER" textFill="#838282" wrapText="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="10.0">
+            <font>
+                <Font name="MS Outlook" size="19.0" />
+            </font>
+        </Label>
+        <JFXButton buttonType="RAISED" layoutX="334.0" layoutY="14.0" onAction="#goToEdit" ripplerFill="#4250e8" style="-fx-background-color: #f7b90c;" text="Edit" />
+        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#goToHome" ripplerFill="#4250e8" style="-fx-background-color: #f7b90c;" text="Back" />
+        <ImageView fitHeight="63.0" fitWidth="70.0" layoutX="35.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/facebook.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="63.0" fitWidth="70.0" layoutX="126.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/instagram.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="63.0" fitWidth="70.0" layoutX="216.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/twitter.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="63.0" fitWidth="70.0" layoutX="308.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/youtube.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="userName1" alignment="CENTER" contentDisplay="CENTER" layoutY="73.0" text="Profile Information" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <font>
+                <Font name="MS Outlook" size="27.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

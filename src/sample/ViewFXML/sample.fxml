@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="576.0" style="-fx-background-color: #cc4954;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Controller">
+    <children>
+        <TabPane layoutX="14.0" layoutY="55.0" prefHeight="398.0" prefWidth="576.0" tabClosingPolicy="UNAVAILABLE" tabMinHeight="40.0" tabMinWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <tabs>
+                <Tab style="-fx-pref-width: 185px; -fx-pref-height: 52px;" text="Home">
+                    <graphic>
+                        <ImageView fitHeight="59.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/home.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="576.0" style="-fx-background-color: #eeeeee;">
+                            <children>
+                                <JFXButton alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="14.0" layoutY="23.0" onAction="#handleButtonAction" prefHeight="89.0" prefWidth="131.0" ripplerFill="#eef1f5" style="-fx-background-color: #4979cc; -jfx-disable-visual-focus: true;" text="Share Screen" textAlignment="JUSTIFY" textFill="#fcfcfc">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/2799357.png" />
+                                            </image>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0" hue="0.1" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="291.0" layoutY="23.0" onAction="#goToCanvas" prefHeight="89.0" prefWidth="131.0" ripplerFill="#eef1f5" style="-fx-background-color: #4979cc; -jfx-disable-visual-focus: true;" text="White Board" textAlignment="JUSTIFY" textFill="#fcfcfc">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/whiteboard-with-graphics.png" />
+                                            </image>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0" hue="0.1" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="14.0" layoutY="128.0" onAction="#goToAudioCall" prefHeight="89.0" prefWidth="131.0" ripplerFill="#eef1f5" style="-fx-background-color: #4979cc; -jfx-disable-visual-focus: true;" text="Audio Call" textAlignment="JUSTIFY" textFill="#fcfcfc">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/video-call1.png" />
+                                            </image>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0" hue="0.1" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="152.0" layoutY="127.0" prefHeight="89.0" prefWidth="131.0" ripplerFill="#eef1f5" style="-fx-background-color: #4979cc; -jfx-disable-visual-focus: true;" text="Video Call" textAlignment="JUSTIFY" textFill="#fcfcfc">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/video-call.png" />
+                                            </image>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0" hue="0.1" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="152.0" layoutY="232.0" onAction="#goToProfile" prefHeight="89.0" prefWidth="131.0" ripplerFill="#eef1f5" style="-fx-background-color: #4979cc; -jfx-disable-visual-focus: true;" text="Profile" textAlignment="JUSTIFY" textFill="#fcfcfc">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/profile.png" />
+                                            </image>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0" hue="0.1" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="431.0" layoutY="127.0" onAction="#sendFileEvent" prefHeight="89.0" prefWidth="131.0" ripplerFill="#eef1f5" style="-fx-background-color: #4979cc; -jfx-disable-visual-focus: true;" text="Send File" textAlignment="JUSTIFY" textFill="#fcfcfc">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/file-sharing.png" />
+                                            </image>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0" hue="0.1" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="431.0" layoutY="23.0" onAction="#goToRenoteControl" prefHeight="89.0" prefWidth="131.0" ripplerFill="#eef1f5" style="-fx-background-color: #4979cc; -jfx-disable-visual-focus: true;" text="Remote Control" textAlignment="JUSTIFY" textFill="#fcfcfc">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/1214305.png" />
+                                            </image>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0" saturation="-1.0" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="14.0" layoutY="233.0" onAction="#goToTasks" prefHeight="89.0" prefWidth="131.0" ripplerFill="#eef1f5" style="-fx-background-color: #4979cc; -jfx-disable-visual-focus: true;" text="Tasks" textAlignment="JUSTIFY" textFill="#fcfcfc">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/exam.png" />
+                                            </image>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0" hue="0.1" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="152.0" layoutY="23.0" onAction="#goToViewShare" prefHeight="89.0" prefWidth="131.0" ripplerFill="#eef1f5" style="-fx-background-color: #4979cc; -jfx-disable-visual-focus: true;" text="View Share" textAlignment="JUSTIFY" textFill="#fcfcfc">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/2799357.png" />
+                                            </image>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0" hue="0.1" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="291.0" layoutY="127.0" onAction="#goToChat" prefHeight="89.0" prefWidth="131.0" ripplerFill="#eef1f5" style="-fx-background-color: #4979cc; -jfx-disable-visual-focus: true;" text="Chat" textAlignment="JUSTIFY" textFill="#fcfcfc">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../Images/chat.png" />
+                                            </image>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0" hue="0.1" />
+                                            </effect>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </JFXButton>
+                            </children>
+                        </AnchorPane>
+                    </content>
+
+                </Tab>
+                <Tab style="-fx-pref-width: 185px; -fx-pref-height: 52px;" text="Notifications">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #eeeeee;">
+                     <children>
+                        <ListView fx:id="notificationList" prefHeight="342.0" prefWidth="576.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                     </children></AnchorPane>
+                    </content>
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/list.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Tab>
+                <Tab style="-fx-pref-width: 185px; -fx-pref-height: 52px;" text="Settings">
+                    <graphic>
+
+                    </graphic>
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #eeeeee;">
+                            <children>
+                                <Label layoutX="8.0" layoutY="34.0" text="Download Path:">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="directoryLabel" layoutX="152.0" layoutY="37.0" prefHeight="23.0" prefWidth="357.0" style="-fx-background-color: #dddddd; -fx-border-color: #000000;">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </Label>
+                        <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="518.0" layoutY="31.0" onAction="#choosedirectory" ripplerFill="#54bee8">
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/folder.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                    <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/settings.png" />
+                            </image>
+                            <effect>
+                                <ColorAdjust brightness="-1.0" />
+                            </effect>
+                        </ImageView>
+                    </graphic>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <JFXButton fx:id="connectionButton" alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="466.0" layoutY="28.0" onAction="#startConnection" prefHeight="25.0" prefWidth="104.0" ripplerFill="#f5bcbc" style="-fx-background-color: #4979cc;" text="Connected" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="54.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/options.png" />
+                    </image>
+                    <effect>
+                        <ColorAdjust brightness="1.0" hue="0.1" />
+                    </effect>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <Label layoutX="84.0" layoutY="12.0" text="Tuition-E" textFill="#fcfcfc">
+            <font>
+                <Font name="Roboto Black" size="40.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="56.0" fitWidth="77.0" layoutX="21.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/teaching.png" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="1.0" contrast="0.21" />
+            </effect>
+        </ImageView>
+        <ScrollPane layoutX="-270.0" layoutY="-34.0" prefHeight="200.0" prefWidth="200.0" />
+      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="427.0" layoutY="26.0" onAction="#checkConnection" ripplerFill="#4f8dda" text="Check">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/refresh.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+    </children>
+</AnchorPane>

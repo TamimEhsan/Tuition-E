@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.Share_Screen">
+    <children>
+        <ImageView fx:id="imageViewTry" fitHeight="392.0" fitWidth="600.0" layoutY="1.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../Images/20093.PNG"/>
+            </image>
+        </ImageView>
+        <JFXButton layoutX="1.0" layoutY="1.0" onAction="#handleButtonAction2" style="-fx-background-color: #4f8ef0;"
+                   text="Back" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/exit.png"/>
+                    </image>
+                    <effect>
+                        <ColorAdjust brightness="1.0"/>
+                    </effect>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

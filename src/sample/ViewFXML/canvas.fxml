@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.WhiteBoard">
+    <children>
+        <ImageView fx:id="canvasThat" fitHeight="419.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0" />
+        <Canvas fx:id="canvasThis" height="419.0" layoutY="85.0" width="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0" />
+        <JFXButton buttonType="RAISED" layoutX="3.0" layoutY="10.0" onAction="#backtoHome" prefHeight="35.0" prefWidth="110.0" ripplerFill="#7dd5dd" style="-fx-background-color: #4979cc;" text="Back" textFill="WHITE">
+            <graphic>
+                <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font size="20.0" />
+            </font>
+        </JFXButton>
+        <ColorPicker fx:id="colorPicker" layoutX="460.0" layoutY="9.0" onAction="#changeColor" />
+        <JFXButton buttonType="RAISED" layoutX="595.0" layoutY="9.0" onAction="#clearScreen" prefHeight="25.0" prefWidth="100.0" ripplerFill="#6292eb" style="-fx-background-color: #4979cc;" text="Clear Screen" textFill="WHITE" />
+        <JFXToggleButton fx:id="toggleAnnote" layoutX="343.0" layoutY="7.0" onAction="#switchAnnote" prefHeight="25.0" prefWidth="110.0" selected="true" text="Annote">
+            <padding>
+                <Insets bottom="-10.0" top="-10.0" />
+            </padding>
+        </JFXToggleButton>
+        <JFXSlider fx:id="slider" layoutX="341.0" layoutY="47.0" prefHeight="14.0" prefWidth="356.0">
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+        </JFXSlider>
+        <JFXButton buttonType="RAISED" layoutX="295.0" layoutY="24.0" onAction="#addText" ripplerFill="#d07b7b" style="-fx-background-color: #4979cc;" text="Add" textFill="WHITE" />
+        <JFXTextField fx:id="addTextLabel" layoutX="119.0" layoutY="6.0" prefHeight="25.0" prefWidth="168.0" promptText="Enter the text to add" />
+        <JFXSlider fx:id="textSize" layoutX="119.0" layoutY="47.0" max="30.0" min="1.0" prefHeight="14.0" prefWidth="168.0" value="15.0" />
+        <Label layoutX="174.0" layoutY="60.0" text="Text Input">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="471.0" layoutY="60.0" text="Paint Input">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+
+    </children>
+</AnchorPane>

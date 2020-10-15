@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.EditProfile">
+    <children>
+        <Label layoutX="177.0" layoutY="37.0" text="Edit Profile Information">
+            <font>
+                <Font name="MS Outlook" size="24.0"/>
+            </font>
+        </Label>
+        <Label layoutX="36.0" layoutY="111.0" text="Name">
+            <font>
+                <Font name="MS Outlook" size="20.0"/>
+            </font>
+        </Label>
+        <Label layoutX="34.0" layoutY="149.0" text="Description">
+            <font>
+                <Font name="MS Outlook" size="20.0"/>
+            </font>
+        </Label>
+        <Label layoutX="33.0" layoutY="188.0" text="Display Image">
+            <font>
+                <Font name="MS Outlook" size="20.0"/>
+            </font>
+        </Label>
+        <Label fx:id="editImagePath" layoutX="177.0" layoutY="190.0" prefHeight="23.0" prefWidth="343.0"
+               style="-fx-background-color: #eeeeee;">
+            <font>
+                <Font name="MS Outlook" size="12.0"/>
+            </font>
+        </Label>
+        <JFXButton buttonType="RAISED" layoutX="532.0" layoutY="188.0" onAction="#chooseImage"
+                   style="-fx-background-color: #45a7f7;" text="Edit" textFill="WHITE"/>
+        <JFXTextField fx:id="editDescription" layoutX="177.0" layoutY="137.0" prefHeight="25.0" prefWidth="343.0">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="editName" layoutX="177.0" layoutY="103.0" prefHeight="25.0" prefWidth="343.0">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </JFXTextField>
+        <JFXButton buttonType="RAISED" layoutX="509.0" layoutY="345.0" onAction="#saveInfo"
+                   style="-fx-background-color: #45a7f7;" text="Save" textFill="WHITE"/>
+        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#goToProfile"
+                   style="-fx-background-color: #45a7f7;" text="Back" textFill="WHITE"/>
+    </children>
+</AnchorPane>

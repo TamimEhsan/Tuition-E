@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.RemoteControl">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="960.0" style="-fx-background-color: black;">
+            <children>
+                <JFXButton buttonType="RAISED" onAction="#handleButtonAction2" prefHeight="35.0" prefWidth="110.0" ripplerFill="#7dd5dd" style="-fx-background-color: #4979cc;" text="Back" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/back.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </HBox>
+        <ImageView fx:id="imageViewTry" fitHeight="481.0" fitWidth="960.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>
