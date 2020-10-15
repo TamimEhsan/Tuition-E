@@ -27,19 +27,19 @@ Both the user can share their screen with one another using realtime screenshare
 
 This is a light weight remote control function that allows only mouse click events between peers. And as of such only the host can enable remote control.
 
-![Remote Control] (https://github.com/TamimEhsan/Tuition-E/blob/master/Assets/RemoteControl.gif)
+![Remote Control](https://github.com/TamimEhsan/Tuition-E/blob/master/Assets/RemoteControl.gif)
 
 ## Chat
 
 Chat window features a simple but attractive chat gui where the users can share their thoughts
 
-![Chat]( https://github.com/TamimEhsan/Tuition-E/tree/master/Assets/Chat.gif)
+![Chat](https://github.com/TamimEhsan/Tuition-E/tree/master/Assets/Chat.gif)
 
 ## File share
 
 The File share option allows user to upload and download files to and from the peer. The transfer rate is pretty good i guess.
 
-![File] (https://github.com/TamimEhsan/Tuition-E/blob/master/Assets/FileShare2.gif)
+![File](https://github.com/TamimEhsan/Tuition-E/blob/master/Assets/FileShare2.gif)
 
 ## Audio Call
 
@@ -55,9 +55,9 @@ Same problem here! My webcam is also broken. Will update this feature asap!
 
 The whiteboard feature allows both the user to share a board and with some handy features the experience would be excellent
 
-![Image] (https://github.com/TamimEhsan/Tuition-E/tree/master/Assets/Whiteboard.gif)
+![Image](https://github.com/TamimEhsan/Tuition-E/tree/master/Assets/Whiteboard.gif)
 
-![Image] (https://github.com/TamimEhsan/Tuition-E/tree/master/Assets/WhiteBoardFunctions.gif)
+![Image](https://github.com/TamimEhsan/Tuition-E/tree/master/Assets/WhiteBoardFunctions.gif)
 
 ## Tasks
 
@@ -69,4 +69,4 @@ Used SQLite database here to store the tasks lists.
 
 The user can change his or her profile section too!
 
-![Profile] (https://github.com/TamimEhsan/Tuition-E/tree/master/Assets/Profile.gif)
+![Profile](https://github.com/TamimEhsan/Tuition-E/tree/master/Assets/Profile.gif)
