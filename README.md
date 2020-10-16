@@ -13,13 +13,14 @@ Tuition-E is a Java powered software made for peer to peer network connection us
 
 ## Features
 
-- Audio Call
-- Screenshare
+- [Screenshare](#-screenshare)
 - Remote Control
-- Chat
 - Whiteboard
 - Saving Tasks
+- Chat
 - File share
+- Audio Call
+- Profile section
 - Notifications
 - And lots more
 
@@ -41,8 +42,9 @@ Both the user can share their screen with one another using realtime screenshare
 
 ### Features
 
+- 2:1 display ratio [Can be converted to 1:1]
 - Two way share screen
-- Seperate Share scree and view share option
+- Seperate Share screen and view share option
 
 ![Image](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/ScreenShare.gif)
 
