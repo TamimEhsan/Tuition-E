@@ -9,7 +9,7 @@ Tuition-E is a Java powered software made for peer to peer network connection us
 - [Jfoenix](https://github.com/TamimEhsan/Tuition-E/blob/master/Dependencies/TrayTester.jar) for material design
 - [TrayTester](https://github.com/TamimEhsan/Tuition-E/blob/master/Dependencies/TrayTester.jar) for push notifications
 - [SQLite JDBC](https://github.com/TamimEhsan/Tuition-E/blob/master/Dependencies/sqlite-jdbc-3.32.3.2.jar) for database connection
-- [Sarxos](https://github.com/TamimEhsan/Tuition-E/blob/master/Dependencies/webcam-capture-0.3.13-20200330.202351-7.jar) for webcam capture
+- [Sarxos Webcam Capture](https://github.com/TamimEhsan/Tuition-E/blob/master/Dependencies/webcam-capture-0.3.13-20200330.202351-7.jar) for Video Call
 
 ## Features
 
@@ -27,7 +27,11 @@ Tuition-E is a Java powered software made for peer to peer network connection us
 
 ## Setting up a Connection
 
-The host at first creates a server . And the user can connect to that server. And after that they can use the shared options. Some of the freatures like Tasks, Profile can be used wothout connection too!
+- The host need to launch his app first
+- Then start the server with the start button
+- The state of the connection can be refreshed by the refresh button
+- Then the client launches his/her app.
+- The client app connects automatically and the host side status changes to connected
 
 ![Connection](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/Connection.gif)
 
@@ -53,39 +57,6 @@ This is a light weight remote control function that allows only mouse click even
 - Supports multiple click
 
 ![Remote Control](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/RemoteControl.gif)
-
-## Chat
-
-Chat window features a simple but attractive chat gui where the users can share their thoughts
-
-### Features
-
-- Seperate Sender and Reciever [Left right] message display
-
-
-![Chat](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/Chat.gif)
-
-## File share
-
-The File share option allows user to upload and download files to and from the peer. The transfer rate is pretty good i guess.
-
-### Features
-
-- Supports all kind of file type
-- Changable download directory
-- Supports upto 250 MB file with no pressure
-
-![File](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/FileShare2.gif)
-
-## Audio Call
-
-Although not tested ( cause my mic is broken ) this allows the users to directly call each other. The voice gets slightly broken.
-
-![Audio](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/AudioCall.gif)
-
-## Video Call
-
-Same problem here! My webcam is also broken. Will update this feature asap!
 
 ## Whiteboard
 
@@ -123,6 +94,39 @@ Used SQLite database here to store the tasks lists.
 
 ![Tasks](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/Tasks.gif)
 
+## Chat
+
+Chat window features a simple but attractive chat gui where the users can share their thoughts
+
+### Features
+
+- Seperate Sender and Reciever [Left right] message display
+
+
+![Chat](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/Chat.gif)
+
+## File share
+
+The File share option allows user to upload and download files to and from the peer. The transfer rate is pretty good i guess.
+
+### Features
+
+- Supports all kind of file type
+- Changable download directory
+- Supports upto 250 MB file with no pressure
+
+![File](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/FileShare2.gif)
+
+## Audio Call
+
+Although not tested ( cause my mic is broken ) this allows the users to directly call each other. The voice gets slightly broken.
+
+![Audio](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/AudioCall.gif)
+
+## Video Call
+
+Same problem here! My webcam is also broken. Will update this feature asap!
+
 ## Profile
 
 The user can change his or her profile section too!
@@ -134,3 +138,14 @@ The user can change his or her profile section too!
 - Set image from local device
 
 ![Profile](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/Profile.gif)
+
+## Notifications
+
+So far the app send notifications for new messages and new file recieved.
+
+### Features
+
+- Push notifications in the lower right corner of screen of type showaAndWait
+- In memory saved notification with seperate screen 
+
+![Notifications](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/Notification.gif)
