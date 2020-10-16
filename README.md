@@ -19,7 +19,7 @@ Tuition-E is a Java powered software made for peer to peer network connection us
 - [x] [Saving Tasks](#tasks)
 - [x] [Chat](#chat)
 - [x] [File share](#file-share)
-- [x] [Audio Call](#audio-call)
+- [ ] [Audio Call](#audio-call)
 - [ ] Video Call
 - [x] [Profile section](#profile)
 - [x] [Notifications](#notifications)
