@@ -13,16 +13,17 @@ Tuition-E is a Java powered software made for peer to peer network connection us
 
 ## Features
 
-- [Screenshare](#screenshare)
-- [Remote Control](#remote-control)
-- [Whiteboard](#whiteboard)
-- [Saving Tasks](#tasks)
-- [Chat](#chat)
-- [File share](#file-share)
-- [Audio Call](#audio-call)
-- [Profile section](#profile)
-- [Notifications](#notifications)
-- And lots more
+- [x] [Screenshare](#screenshare)
+- [x] [Remote Control](#remote-control)
+- [x] [Whiteboard](#whiteboard)
+- [x] [Saving Tasks](#tasks)
+- [x] [Chat](#chat)
+- [x] [File share](#file-share)
+- [x] [Audio Call](#audio-call)
+- [ ] Video Call
+- [x] [Profile section](#profile)
+- [x] [Notifications](#notifications)
+- [x] And lots more
 
 ![UI](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/ui.PNG)
 
