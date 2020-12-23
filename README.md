@@ -153,7 +153,7 @@ So far the app send notifications for new messages and new file recieved.
 
 ![Notifications](https://raw.githubusercontent.com/TamimEhsan/Tuition-E/master/Assets/Notification.gif)
 
-### Achievements
+## Achievements
 
 Finalist in [Haccelerate 2020](https://www.hackerearth.com/challenges/hackathon/hackccelerate-2020/)  
 Top [14 among 1700+ teams](https://www.hackerearth.com/challenges/hackathon/hackccelerate-2020/custom-tab/shortlisted-teams/#Shortlisted%20Teams) 
